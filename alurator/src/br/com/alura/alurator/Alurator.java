@@ -62,4 +62,9 @@ public class Alurator {
 		
 		return retorno;
 	}
+
+	public <T, K extends T> void registra(Class<T> tipoFonte, Class<K> tipoDestino) {
+
+		container.registra(tipoFonte, tipoDestino);
+	}
 }
